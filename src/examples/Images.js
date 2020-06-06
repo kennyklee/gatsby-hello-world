@@ -14,7 +14,7 @@ const getImages = graphql`
     }
     fluid: file(relativePath: { eq: "image-4.jpeg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
