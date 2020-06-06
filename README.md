@@ -1,3 +1,7 @@
+Github repository with complete source code
+
+https://github.com/john-smilga/gatsby-tutorial-2020
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
