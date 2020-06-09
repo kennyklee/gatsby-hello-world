@@ -10,7 +10,7 @@ module.exports = {
     description: "some random description",
     author: "@johndoe",
     data: ["item 1", "item 2"],
-    person: { name: "peter", age: 32 },
+    person: { name: "peter", age: 32 }
   },
 
   plugins: [
@@ -21,16 +21,24 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
-      },
+        path: `${__dirname}/src/images/`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/posts/`,
-      },
+        path: `${__dirname}/src/posts/`
+      }
     },
-  ],
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `3o2914b2zflq`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `QLFZu_7Nb1SDNe6ceXZsbCxIFC5ekjnvOJL1VVuTZvU`
+      }
+    }
+  ]
   /* Your site config here */
 }
